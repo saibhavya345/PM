@@ -1,0 +1,58 @@
+.right-side {
+  /* Align elements to the right */
+  text-align: right;
+}
+
+.right-side select {
+  /* Define width and margin for better look */
+  width: 150px;
+  margin-right: 10px;
+}
+
+.owner-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px;
+  }
+  
+  .left-side,
+  .right-side {
+    flex: 1;
+  }
+  
+  p {
+    margin: 0;
+    padding: 5px;
+  }
+  .description {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    
+  }
+
+/* Target the button element */
+button {
+  /* Horizontal centering */
+  display: block; /* Ensures button takes full width */
+  margin-left: auto;
+  margin-right: auto;
+  width:200px;
+  height:50px;
+  font-size: large;
+  background-color: aqua;
+  font-weight: 300;
+
+  /* Vertical centering */
+  position: absolute; /* Position relative to nearest positioned ancestor */
+  right: 45%;
+  bottom:25px;;
+  transform: translateY(-50%); /* Shift button up by half its height */
+}
+
+
+
+
+  
+  
