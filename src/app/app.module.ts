@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CreateComponent } from './create/create.component';
 import { SearchComponent } from './search/search.component';
 import { SuccessComponent } from './success/success.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,7 +23,8 @@ import { SuccessComponent } from './success/success.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()

@@ -12,36 +12,30 @@
 <div class="owner-details-container">
     <div class="left-side">
       <p>Property Owner Name:
-      {{ ownerData.ownerName }}</p>
+      <input type="text">{{ownerData.ownerName}}</p>
       <p>Property Owner Id:
-      {{ ownerData.ownerId }}</p>
+      <input type="text">{{ ownerData.ownerId }}</p>
       <p>Property Location:
-      {{ ownerData.propertyLocation }}</p>
+      <input type="text">{{ ownerData.propertyLocation }}</p>
     </div>
     <div class="right-side">
       <p>Created By:
-      {{ ownerData.createdBy }}</p>
+      <input type="text">{{ ownerData.createdBy }}</p>
       <p>Created Date and Time:
       {{ ownerData.createdDate | date:'longDate' }}
       {{ ownerData.createdDate | date:'mediumTime' }}</p>
       <p>Assigned To:
-      {{ ownerData.assignedTo }}</p>
+      <input type="text">{{ ownerData.assignedTo }}</p>
     </div>
   </div>
  
-<form action="/action_page.php">
-  <p><label for="w3review">Description</label></p>
-  <textarea  rows="7" cols="100"></textarea><br>
-</form>
-<form action="/success" method="post" enctype="multipart/form-data">
-  <label for="fileInput"><h2>Attachments:</h2></label><br>
-  <input type="file" id="fileInput" name="files" multiple>
-  <button type="submit">Create</button>
-</form>
-
+  <form (submit)="onSubmit()" class="description">
+    <label for="w3review">Description</label>
+    <textarea rows="20" cols="200"></textarea>
+  </form>
   
-  
-  
- 
-
-  
+  <form (submit)="onSubmit()" enctype="multipart/form-data" class="attach">
+    <label for="fileInput"><h2>Attachments:</h2></label>
+    <input type="file" id="fileInput" name="files" multiple>
+    <button type="submit" class="btn-primary">Create</button>
+  </form>

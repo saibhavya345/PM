@@ -1,58 +1,77 @@
-.right-side {
-  /* Align elements to the right */
+.right-side1 {
+  float: right;
+  margin-left: 50px; 
   text-align: right;
+  justify-content:center; 
+  align-items: right; 
+  
 }
 
-.right-side select {
-  /* Define width and margin for better look */
-  width: 150px;
-  margin-right: 10px;
-}
 
 .owner-details-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 20px;
-  }
-  
-  .left-side,
-  .right-side {
-    flex: 1;
-  }
-  
-  p {
-    margin: 0;
-    padding: 5px;
-  }
-  .description {
-    margin-top: 20px;
-    border: none;
-    padding: 10px;
-    
-  }
-
-/* Target the button element */
-button {
-  /* Horizontal centering */
-  display: block; /* Ensures button takes full width */
-  margin-left: auto;
-  margin-right: auto;
-  width:200px;
-  height:50px;
-  font-size: large;
-  background-color: aqua;
-  font-weight: 300;
-
-  /* Vertical centering */
-  position: absolute; /* Position relative to nearest positioned ancestor */
-  right: 45%;
-  bottom:25px;;
-  transform: translateY(-50%); /* Shift button up by half its height */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
 }
 
 
+.left-side {
+  flex: 1;
+  justify-content: center;
+  align-items: right; 
+  text-align: right;
+  margin:20px;
+  margin-right: 150px;
+  float: right;
+}
 
 
-  
-  
+.right-side {
+  flex: 1;
+  justify-content: center;
+  align-items: right; 
+  text-align: right;
+  margin: 30px;
+  margin-left: 50px;
+}
+
+
+.description {
+  flex: 1;
+  justify-content: center;
+  align-items: center; 
+  text-align: right;
+  display: flex;
+  flex-direction: column; 
+  margin-right: 50px;
+}
+
+
+.description textarea {
+  width: 50%; 
+  height: 50px; 
+  resize: vertical;
+}
+.attach{
+  flex: 1;
+  justify-content: center;
+  align-items: center; 
+  text-align: right;
+  display: flex;
+  flex-direction: column; 
+}
+.description-attachments {
+  display: flex;
+  flex-direction: column; 
+  margin-top: 20px;
+}
+
+.btn-primary {
+  display: block; 
+  margin: 20px auto;
+  background-color: green;
+  border-radius: 15px;
+  width: 150px;
+  height: 45px;
+}

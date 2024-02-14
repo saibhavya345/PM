@@ -1,4 +1,7 @@
 import { Component,OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+
 
 
 interface OwnerData {
@@ -31,18 +34,21 @@ export class CreateComponent implements OnInit{
     description: '',
     status:''
   };
-
+  constructor(private http: HttpClient) {}
   ngOnInit() {
     // Replace this with your logic to fetch or set owner data
-    this.ownerData = {
-      ownerName: 'John Doe',
-      ownerId: 'ABC123',
-      propertyLocation: '123 Main Street',
-      createdBy: 'Jane Doe',
-      createdDate: new Date(),
-      assignedTo: 'Bob Smith',
-      description:" ",
-      status:''
+   
     };
+    onSubmit() {
+     
+  
+      this.http.post<any>('http://localhost:8080/api/owners', this.ownerData)
+        .subscribe(response => {
+          console.log('Data stored successfully:', response);
+          // Handle success, e.g., clear form fields, display success message, redirect
+        }, error => {
+          console.error('Error storing data:', error);
+          // Handle error, e.g., display error message
+        });
   }
 }
