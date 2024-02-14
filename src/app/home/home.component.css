@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  height: 60px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.form-control-dark {
+  background-color: #343a40;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.nav-item {
+  padding: 0.5rem 1rem;
+  color: lightseagreen;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #007bff;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background-color: #83AEAE;
+  padding: 0;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar-heading {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+.container-fluid {
+  background-color: green;
+}

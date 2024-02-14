@@ -24,10 +24,10 @@ td {
   border: 1px solid #dddddd; /* border */
 }
 tr:nth-child(even) {
-  background-color: yellow; /* background color for even rows */
+  background-color: greenyellow; /* background color for even rows */
 }
 tr:nth-child(odd) {
-  background-color: slategrey; /* background color for even rows */
+  background-color: darkgrey; /* background color for even rows */
 }
 tr:hover {
   background-color: darkgreen; /* background color on hover */
