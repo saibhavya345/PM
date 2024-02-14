@@ -21,6 +21,7 @@ describe('AppComponent', () => {
   });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   it(`should have as title 'admin'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
@@ -31,6 +32,12 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('hema');
 >>>>>>> search
+=======
+  it(`should have as title 'pms'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('pms');
+>>>>>>> create
   });
 
   it('should render title', () => {
@@ -38,9 +45,13 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
 <<<<<<< HEAD
+<<<<<<< HEAD
     expect(compiled.querySelector('.content span')?.textContent).toContain('admin app is running!');
 =======
     expect(compiled.querySelector('.content span')?.textContent).toContain('hema app is running!');
 >>>>>>> search
+=======
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, pms');
+>>>>>>> create
   });
 });

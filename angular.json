@@ -3,6 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "hema": {
       "projectType": "application",
       "schematics": {},
@@ -99,16 +100,39 @@
     "admin": {
       "projectType": "application",
       "schematics": {},
+=======
+    "pms": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
+>>>>>>> create
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/admin",
             "index": "src/index.html",
             "main": "src/main.ts",
+=======
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/pms",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+>>>>>>> create
             "polyfills": [
               "zone.js"
             ],
@@ -118,10 +142,21 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
+=======
+              "src/styles.css"
+            ],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
+>>>>>>> create
           },
           "configurations": {
             "production": {
@@ -140,12 +175,18 @@
               "outputHashing": "all"
             },
             "development": {
+<<<<<<< HEAD
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+=======
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+>>>>>>> create
             }
           },
           "defaultConfiguration": "production"
@@ -154,10 +195,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "admin:build:production"
             },
             "development": {
               "browserTarget": "admin:build:development"
+=======
+              "buildTarget": "pms:build:production"
+            },
+            "development": {
+              "buildTarget": "pms:build:development"
+>>>>>>> create
             }
           },
           "defaultConfiguration": "development"
@@ -165,7 +213,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "admin:build"
+=======
+            "buildTarget": "pms:build"
+>>>>>>> create
           }
         },
         "test": {
@@ -181,7 +233,10 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "@angular/material/prebuilt-themes/indigo-pink.css",
+=======
+>>>>>>> create
               "src/styles.css"
             ],
             "scripts": []
@@ -189,5 +244,11 @@
         }
       }
     }
+<<<<<<< HEAD
+=======
+  },
+  "cli": {
+    "analytics": false
+>>>>>>> create
   }
 }

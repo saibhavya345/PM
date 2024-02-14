@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { TargetComponent } from './target/target.component';
 
 const routes: Routes = [
@@ -16,6 +17,18 @@ const routes: Routes = [
   { path: 'update/:id', component: UpdateComponent },
   { path: 'update-success-dialog', component: UpdateSuccessDialogComponent }
 >>>>>>> search
+=======
+import { CreateComponent } from './create/create.component';
+import { AppComponent } from './app.component';
+import { SearchComponent } from './search/search.component';
+import { SuccessComponent } from './success/success.component';
+
+const routes: Routes = [
+ 
+  {path:'create', component:CreateComponent},
+  {path:'search',component:SearchComponent},
+  {path:'success',component:SuccessComponent}
+>>>>>>> create
 ];
 
 @NgModule({
@@ -24,6 +37,9 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> search
+=======
+>>>>>>> create
