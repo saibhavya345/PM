@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "admin": {
+=======
+    "hema": {
+>>>>>>> search
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/admin",
+=======
+            "outputPath": "dist/hema",
+>>>>>>> search
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,10 +33,17 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
 
               "src/styles.css","./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.min.js"]
+=======
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css"
+            ],
+            "scripts": []
+>>>>>>> search
           },
           "configurations": {
             "production": {
@@ -61,10 +76,17 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "admin:build:production"
             },
             "development": {
               "browserTarget": "admin:build:development"
+=======
+              "browserTarget": "hema:build:production"
+            },
+            "development": {
+              "browserTarget": "hema:build:development"
+>>>>>>> search
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +94,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "admin:build"
+=======
+            "browserTarget": "hema:build"
+>>>>>>> search
           }
         },
         "test": {
@@ -88,6 +114,10 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
+=======
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+>>>>>>> search
               "src/styles.css"
             ],
             "scripts": []
@@ -95,5 +125,11 @@
         }
       }
     }
+<<<<<<< HEAD
+=======
+  },
+  "cli": {
+    "analytics": "1133c719-052f-42f2-bef2-7bd8d323b2e3"
+>>>>>>> search
   }
 }
