@@ -3,7 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-<<<<<<< HEAD
     "hema": {
       "projectType": "application",
       "schematics": {},
@@ -17,33 +16,17 @@
             "outputPath": "dist/hema",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["@angular/material/prebuilt-themes/indigo-pink.css", "src/styles.css"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
+                {"type": "initial", "maximumWarning": "500kb", "maximumError": "1mb"},
+                {"type": "anyComponentStyle", "maximumWarning": "2kb", "maximumError": "4kb"}
               ],
               "outputHashing": "all"
             },
@@ -61,37 +44,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "browserTarget": "hema:build:production"
-            },
-            "development": {
-              "browserTarget": "hema:build:development"
-            }
+            "production": {"browserTarget": "hema:build:production"},
+            "development": {"browserTarget": "hema:build:development"}
           },
           "defaultConfiguration": "development"
         },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "hema:build"
-          }
-        },
+        "extract-i18n": {"builder": "@angular-devkit/build-angular:extract-i18n", "options": {"browserTarget": "hema:build"}},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["@angular/material/prebuilt-themes/indigo-pink.css", "src/styles.css"],
             "scripts": []
           }
         }
@@ -100,93 +65,37 @@
     "admin": {
       "projectType": "application",
       "schematics": {},
-=======
-    "pms": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
->>>>>>> create
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
-<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/admin",
             "index": "src/index.html",
             "main": "src/main.ts",
-=======
-          "builder": "@angular-devkit/build-angular:application",
-          "options": {
-            "outputPath": "dist/pms",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
->>>>>>> create
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-<<<<<<< HEAD
-              "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["@angular/material/prebuilt-themes/indigo-pink.css", "src/styles.css"],
             "scripts": []
-=======
-              "src/styles.css"
-            ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
->>>>>>> create
           },
           "configurations": {
             "production": {
               "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
+                {"type": "initial", "maximumWarning": "500kb", "maximumError": "1mb"},
+                {"type": "anyComponentStyle", "maximumWarning": "2kb", "maximumError": "4kb"}
               ],
               "outputHashing": "all"
             },
             "development": {
-<<<<<<< HEAD
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
-=======
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
->>>>>>> create
             }
           },
           "defaultConfiguration": "production"
@@ -194,61 +103,54 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-<<<<<<< HEAD
-              "browserTarget": "admin:build:production"
-            },
-            "development": {
-              "browserTarget": "admin:build:development"
-=======
-              "buildTarget": "pms:build:production"
-            },
-            "development": {
-              "buildTarget": "pms:build:development"
->>>>>>> create
-            }
+            "production": {"browserTarget": "admin:build:production"},
+            "development": {"browserTarget": "admin:build:development"}
           },
           "defaultConfiguration": "development"
         },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-<<<<<<< HEAD
-            "browserTarget": "admin:build"
-=======
-            "buildTarget": "pms:build"
->>>>>>> create
-          }
-        },
+        "extract-i18n": {"builder": "@angular-devkit/build-angular:extract-i18n", "options": {"browserTarget": "admin:build"}},
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-<<<<<<< HEAD
-              "@angular/material/prebuilt-themes/indigo-pink.css",
-=======
->>>>>>> create
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["@angular/material/prebuilt-themes/indigo-pink.css", "src/styles.css"],
             "scripts": []
           }
         }
       }
+    },
+    "pms": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {"standalone": false},
+        "@schematics/angular:directive": {"standalone": false},
+        "@schematics/angular:pipe": {"standalone": false}
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/pms",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.app.json",
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {"entry": "server.ts"}
+          },
+          "configurations": {"production": {}}
+        }
+      }
     }
-<<<<<<< HEAD
-=======
   },
-  "cli": {
-    "analytics": false
->>>>>>> create
-  }
+  "cli": {"analytics": false}
 }
